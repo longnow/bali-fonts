@@ -4,6 +4,6 @@ This repository contains the latest release of two [Balinese Unicode](https://en
 
 Vimala has a similar style to Bali Simbar, a non-Unicode font designed by I Made Suatjana that is popular in Bali. Pustaka has a monoline (“sans-serif”) style that is optimized for screens. Below is a sample showing the Balinese greeting _om swastyastu_ in Vimala (above) and Pustaka(below):
 
-![font sample](sample.png)
+<img src="sample.png" width="314" height="310" alt="font sample">
 
 PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_panlex) that can be used with these fonts or other Balinese Unicode fonts.

@@ -10,14 +10,14 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 
 ## Changelog
 
-### Pustaka
-
-* 2.00 (August 16, 2019)
-  * initial public release
-
 ### Vimala
 
 * 2.01 (August 21, 2019)
   * rebalanced bowl on ra repa (U+1B3A)
+* 2.00 (August 16, 2019)
+  * initial public release
+
+### Pustaka
+
 * 2.00 (August 16, 2019)
   * initial public release

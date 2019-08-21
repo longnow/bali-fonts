@@ -7,3 +7,17 @@ Vimala has a similar style to Bali Simbar, a non-Unicode font designed by I Made
 <img src="sample.png" width="314" height="310" alt="font sample">
 
 PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_panlex) that can be used with these fonts or other Balinese Unicode fonts.
+
+## Changelog
+
+### Pustaka
+
+* 2.00 (August 16, 2019)
+  * initial public release
+
+### Vimala
+
+* 2.01 (August 21, 2019)
+  * rebalanced bowl on ra repa (U+1B3A)
+* 2.00 (August 16, 2019)
+  * initial public release

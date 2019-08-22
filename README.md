@@ -12,6 +12,9 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 
 ### Vimala
 
+* 2.02 (August 22, 2019)
+  * fixed rendering of independent vowels containing tedong when text is in NFD
+  * fixed spacing of gantungan nya + gantungan ya
 * 2.01 (August 21, 2019)
   * rebalanced bowl on ra repa (U+1B3A)
 * 2.00 (August 16, 2019)
@@ -19,5 +22,8 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 
 ### Pustaka
 
+* 2.01 (August 22, 2019)
+  * fixed rendering of independent vowels containing tedong when text is in NFD
+  * fixed spacing of gantungan nya + gantungan ya
 * 2.00 (August 16, 2019)
   * initial public release

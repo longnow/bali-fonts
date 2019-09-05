@@ -12,18 +12,28 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 
 ### Vimala
 
+* 2.03 (September 4, 2019)
+  * allow combining marks above digits (for modre)
+  * fix positioning of surang
+  * fix positioning of combining marks above after second- and third-stack ra
+  * correctly choose second-stack ra ligature after rerekan
 * 2.02 (August 22, 2019)
-  * fixed rendering of independent vowels containing tedong when text is in NFD
-  * fixed spacing of gantungan nya + gantungan ya
+  * fix rendering of independent vowels containing tedong when text is in NFD
+  * fix spacing of gantungan nya + gantungan ya
 * 2.01 (August 21, 2019)
-  * rebalanced bowl on ra repa (U+1B3A)
+  * rebalance bowl on ra repa (U+1B3A)
 * 2.00 (August 16, 2019)
   * initial public release
 
 ### Pustaka
 
+* 2.02 (September 4, 2019)
+  * allow combining marks above digits (for modre)
+  * fix positioning of surang
+  * fix positioning of combining marks above after second- and third-stack ra
+  * correctly choose second-stack ra ligature after rerekan
 * 2.01 (August 22, 2019)
-  * fixed rendering of independent vowels containing tedong when text is in NFD
-  * fixed spacing of gantungan nya + gantungan ya
+  * fix rendering of independent vowels containing tedong when text is in NFD
+  * fix spacing of gantungan nya + gantungan ya
 * 2.00 (August 16, 2019)
   * initial public release

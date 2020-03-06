@@ -1,10 +1,10 @@
 # bali-fonts
 
-This repository contains the latest release of two [Balinese Unicode](https://en.wikipedia.org/wiki/Balinese_(Unicode_block)) fonts: Vimala and Pustaka. These fonts are copyright [Aditya Bayu Perdana](https://www.behance.net/byabay), all rights reserved. The fonts are available under the [CC-BY-NC-ND 4.0 license](https://creativecommons.org/licenses/by-nc-nd/4.0/). Aditya Bayu Perdana designed the glyphs. [PanLex](https://panlex.org) assisted in developing the OpenType rules.
+This repository contains the latest release of two [Balinese Unicode](https://en.wikipedia.org/wiki/Balinese_(Unicode_block)) fonts: Vimala and Pustaka Bali. These fonts are copyright [Aditya Bayu Perdana](https://www.behance.net/byabay), all rights reserved. The fonts are available under the [SIL OFL 1.1 license](LICENSE). Aditya Bayu Perdana designed the glyphs. [PanLex](https://panlex.org) assisted in developing the OpenType rules.
 
-Vimala has a similar style to Bali Simbar, a non-Unicode font designed by I Made Suatjana that is popular in Bali. Pustaka has a monoline (“sans-serif”) style that is optimized for screens. Below is a sample showing the Balinese greeting _om swastyastu_ in Vimala (above) and Pustaka(below):
+Vimala has a similar style to Bali Simbar, a non-Unicode font designed by I Made Suatjana that is popular in Bali. Pustaka Bali has a monoline (“sans-serif”) style that is optimized for screens. Below is a sample showing the Balinese greeting _om swastyastu_ in Vimala (above) and Pustaka Bali (below):
 
-<img src="sample.png" width="314" height="310" alt="font sample">
+<img src="sample.png" width="498" height="474" alt="font sample">
 
 PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_panlex) that can be used with these fonts or other Balinese Unicode fonts.
 
@@ -12,6 +12,17 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 
 ### Vimala
 
+* 2.04 (March 6, 2020)
+  * changed license to SIL OFL 1.1
+  * changed shape of second-stack ra ligatures (wraps around left)
+  * shapes such as gantungan wa and suku are completely enclosed
+  * nail-like serifs in diagonal strokes (e.g. in cecek) are removed
+  * made gantungan ta latik and ta murda mahaprana more compact
+  * changed shape of ta, gantungan ta, and associated glyphs
+  * changed shape of gantungan na, ca, wa
+  * changed shape of pamada
+  * added glyph for gantungan wa + gantungan wa
+  * added long panti/pamada glyphs
 * 2.03 (September 4, 2019)
   * allow combining marks above digits (for modre)
   * fix positioning of surang
@@ -25,8 +36,14 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 * 2.00 (August 16, 2019)
   * initial public release
 
-### Pustaka
+### Pustaka Bali
 
+* 2.03 (March 6, 2020)
+  * changed license to SIL OFL 1.1
+  * changed shape of second-stack ra ligatures (wraps around left)
+  * shapes such as gantungan wa and suku are completely enclosed
+  * added glyph for gantungan wa + gantungan wa
+  * added long panti/pamada glyphs
 * 2.02 (September 4, 2019)
   * allow combining marks above digits (for modre)
   * fix positioning of surang

@@ -2,7 +2,7 @@
 
 This repository contains the latest release of three [Balinese Unicode](https://en.wikipedia.org/wiki/Balinese_(Unicode_block)) fonts: Vimala, Pustaka Bali, and Kadiri. These fonts are copyright [Aditya Bayu Perdana](https://www.behance.net/byabay), all rights reserved. The fonts are available under the [SIL OFL 1.1 license](LICENSE). Aditya Bayu Perdana designed the glyphs. [PanLex](https://panlex.org) assisted in developing the OpenType rules.
 
-Vimala has a style similar to Bali Simbar, a non-Unicode font designed by I Made Suatjana that is popular in Bali. Pustaka Bali has a monoline (“sans-serif”) style that is optimized for screens. Kadiri is based on the handwriting of a lontar in the collection of Sugi Lanus, written by Pranda Madhe Kadiri. Below is a sample showing the Balinese greeting ᬒᬁᬲ᭄ᬯᬲ᭄ᬢ᭄ᬬᬲ᭄ (_om swastyastu_), from top to bottom: Vimala, Pustaka Bali, Kadiri.
+Vimala has a style similar to Bali Simbar, a non-Unicode font designed by I Made Suatjana that is popular in Bali. Pustaka Bali has a monoline (“sans-serif”) style that is optimized for screens. Kadiri is based on the handwriting of a lontar in the collection of Sugi Lanus, written by Pranda Madhe Kadiri. Below is a sample showing the Balinese greeting ᬒᬁᬲ᭄ᬯᬲ᭄ᬢ᭄ᬬᬲ᭄ᬢᬸ (_om swastyastu_), from top to bottom: Vimala, Pustaka Bali, Kadiri.
 
 <img src="sample.png" width="419" height="573" alt="font sample">
 

@@ -1,10 +1,10 @@
 # bali-fonts
 
-This repository contains the latest release of two [Balinese Unicode](https://en.wikipedia.org/wiki/Balinese_(Unicode_block)) fonts: Vimala and Pustaka Bali. These fonts are copyright [Aditya Bayu Perdana](https://www.behance.net/byabay), all rights reserved. The fonts are available under the [SIL OFL 1.1 license](LICENSE). Aditya Bayu Perdana designed the glyphs. [PanLex](https://panlex.org) assisted in developing the OpenType rules.
+This repository contains the latest release of three [Balinese Unicode](https://en.wikipedia.org/wiki/Balinese_(Unicode_block)) fonts: Vimala, Pustaka Bali, and Kadiri. These fonts are copyright [Aditya Bayu Perdana](https://www.behance.net/byabay), all rights reserved. The fonts are available under the [SIL OFL 1.1 license](LICENSE). Aditya Bayu Perdana designed the glyphs. [PanLex](https://panlex.org) assisted in developing the OpenType rules.
 
-Vimala has a similar style to Bali Simbar, a non-Unicode font designed by I Made Suatjana that is popular in Bali. Pustaka Bali has a monoline (“sans-serif”) style that is optimized for screens. Below is a sample showing the Balinese greeting _om swastyastu_ in Vimala (above) and Pustaka Bali (below):
+Vimala has a style similar to Bali Simbar, a non-Unicode font designed by I Made Suatjana that is popular in Bali. Pustaka Bali has a monoline (“sans-serif”) style that is optimized for screens. Kadiri is based on the handwriting of a lontar in the collection of Sugi Lanus, written by Pranda Madhe Kadiri. Below is a sample showing the Balinese greeting ᬒᬁᬲ᭄ᬯᬲ᭄ᬢ᭄ᬬᬲ᭄ (_om swastyastu_), from top to bottom: Vimala, Pustaka Bali, Kadiri.
 
-<img src="sample.png" width="498" height="474" alt="font sample">
+<img src="sample.png" width="419" height="573" alt="font sample">
 
 PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_panlex) that can be used with these fonts or other Balinese Unicode fonts.
 
@@ -53,4 +53,9 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
   * fix rendering of independent vowels containing tedong when text is in NFD
   * fix spacing of gantungan nya + gantungan ya
 * 2.00 (August 16, 2019)
+  * initial public release
+
+### Kadiri
+
+* 1.00 (March 14, 2020)
   * initial public release

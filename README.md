@@ -38,6 +38,8 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 
 ### Pustaka Bali
 
+* 2.04 (March 14, 2020)
+  * fix several spacing issues in previous release
 * 2.03 (March 6, 2020)
   * changed license to SIL OFL 1.1
   * changed shape of second-stack ra ligatures (wraps around left)

@@ -70,7 +70,7 @@ To compile the fonts, you need [FontForge](https://fontforge.org/) Python bindin
 2. Runs `yasha` to generate each font's final feature file as `src/<font>.ufo/features.fea`.
 3. Runs `script/compile.py` to compile each `.ufo` into `release/<font>.ttf`.
 
-If you are on macOS, you can also run `script/preview`, which first runs `script/compile`, installs the compiled fonts for the current user, and relaunches TextEdit. This lets you test that the compiled fonts are working correctly.
+If you are on macOS, you can also run `script/preview`, which runs `script/compile`, installs the compiled fonts for the current user, and relaunches TextEdit. This lets you test that the compiled fonts are working correctly.
 
 # Modifying glyphs
 

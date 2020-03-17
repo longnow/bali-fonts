@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+fonts="Vimala PustakaBali Kadiri"
+
+script/dist_calc.py
+
+for f in $fonts; do
+    yasha -o "src/${f}.ufo/features.fea" -I src/feature/include "src/feature/${f}.fea.j2"
+    script/compile.py "$f"
+done

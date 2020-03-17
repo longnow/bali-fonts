@@ -64,10 +64,10 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 
 ## Compiling the fonts from source
 
-To compile the fonts, you need [FontForge](https://fontforge.org/) Python bindings and [https://github.com/kblomqvist/yasha](yasha). To compile, run `script/compile`, which does the following:
+To compile the fonts, you need [FontForge](https://fontforge.org/) Python bindings and [yasha](https://github.com/kblomqvist/yasha). To compile, run `script/compile`, which does the following:
 
-1. Runs `script/dist_calc.py`, which reads glyph metrics from the `.sfd` files in `src/` and uses them to generate various portions of the feature file in `src/feature/include/` that perform spacing adjustments.
-2. Runs `yasha` to generate each font's feature file (`features.fea`) in `src/<font>.ufo`.
+1. Runs `script/dist_calc.py`, which reads glyph metrics from the `src/<font>.sfd` and uses them to generate various feature file portions in `src/feature/include/` which perform spacing adjustments.
+2. Runs `yasha` to generate each font's final feature file as `src/<font>.ufo/features.fea`.
 3. Runs `script/compile.py` to compile each `.ufo` into `release/<font>.ttf`.
 
 If you are on macOS, you can also run `script/preview`, which first runs `script/compile`, installs the compiled fonts for the current user, and relaunches TextEdit. This lets you test that the compiled fonts are working correctly.

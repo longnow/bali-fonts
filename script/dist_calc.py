@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import fontforge, os, re
+from collections import defaultdict
 
 include_path = "src/feature/include"
 temp_file = "foo.fea.j2"
@@ -126,9 +127,9 @@ def lookup_anchor(anchor_spec):
 def get_glyph(font, name):
     key = "{0}_{1}".format(font.fontname, name)
 
-    if key in glyph_cache:
+    try:
         return glyph_cache[key]
-    else:
+    except KeyError:
         try:
             font.selection.select(name)
             glyph = list(font.selection.byGlyphs)[0]
@@ -155,28 +156,6 @@ def print_width(font, anchor_spec, bases, msg = None):
         glyph = get_glyph(font, base)
         print("  pos base [\\{0} ] <anchor {1} 0> mark @{2};".format(glyph.glyphname, glyph.width, anchor[1]))
 
-    print()
-
-def print_anchor(font, anchor_spec, lookup):
-    print("lookup {0} {{\n  lookupflag 0;".format(lookup))
-
-    anchor = lookup_anchor(anchor_spec)
-    subtable = font.getSubtableOfAnchor(anchor[0])
-    lookup = font.getLookupOfSubtable(subtable)
-
-    font.generateFeatureFile(temp_file, lookup)
-    f = open(temp_file)
-    fea = f.read()
-    f.close()
-    os.remove(temp_file)
-
-    fea = re.sub(r"\nfeature .+$", r"", fea, flags=re.S)
-    fea = re.sub(r"\n\}.+$", r"", fea, flags=re.S)
-    fea = re.sub(r"^.+lookupflag 0;\n", r"", fea, flags=re.S)
-    fea = re.sub(re.sub(r"-", r"", anchor[0]), anchor[1], fea)
-
-    print(fea)
-    print("}} {0};".format(lookup))
     print()
 
 def print_left2_diff(f, font, mark, bases, lookup, rules, seen):
@@ -391,7 +370,7 @@ def print_mkmk_rules(f, rules, anchor_name):
                 print("    mark [{0} ]' <anchor 0 0> mark @{1}';\n".format(" ".join(rule["marks"]), anchor_name), file=f)
 
 def print_suku_spacing(f, font, bases, code):
-    suku_sets = {}
+    suku_sets = defaultdict(lambda: [])
     base_rules = []
     mark1_rules = []
     seen = {}
@@ -401,12 +380,10 @@ def print_suku_spacing(f, font, bases, code):
         suku_width = int(-1 * suku_glyph.right_side_bearing)
 
         suku = "\\" + suku
-        if suku_width not in suku_sets:
-            suku_sets[suku_width] = []
-        suku_sets[suku_width] = sorted([*suku_sets[suku_width], suku])
+        suku_sets[suku_width].append(suku)
 
     for suku_width, suku_list in suku_sets.items():
-        suku_names = " ".join(suku_list)
+        suku_names = " ".join(sorted(suku_list))
 
         for base in base_below:
             base_glyph = get_glyph(font, base)
@@ -434,7 +411,7 @@ def print_suku_spacing(f, font, bases, code):
             key = "mark_{0}_{1}".format(suku_names, mark_width)
 
             if key in seen:
-                seen[key]["marks"].append(mark)
+                seen[key]["marks"].append("\\" + mark)
             else:
                 bases_to_correct = []
 

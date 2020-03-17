@@ -1,0 +1,19 @@
+{% set font = 'kadiri' %}
+
+{%- include 'gdef.fea.j2' %}
+
+
+{% include 'glyph_class.fea.j2' %}
+
+
+{% include 'gsub.fea.j2' %}
+
+
+# mark classes used in multiple lookups
+
+markClass [\uni1B38.3 ] <anchor -69 -229> @Anchor3;
+markClass [\uni1B38.4 ] <anchor -85 -181> @Anchor3;
+markClass [\uni1B39.3 ] <anchor 2 -200> @Anchor3;
+markClass [\uni1B39.4 ] <anchor -157 -161> @Anchor3;
+
+{% include 'gpos.fea.j2' %}

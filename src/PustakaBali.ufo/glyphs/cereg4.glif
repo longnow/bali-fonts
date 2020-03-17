@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="cereg4" format="2">
+  <advance width="0"/>
+  <outline>
+    <contour>
+      <point x="435" y="-276" type="qcurve" smooth="yes"/>
+      <point x="363" y="-276"/>
+      <point x="334" y="-210" type="qcurve" smooth="yes"/>
+      <point x="320" y="-180"/>
+      <point x="320" y="-145" type="qcurve" smooth="yes"/>
+      <point x="320" y="-41"/>
+      <point x="431" y="24" type="qcurve"/>
+      <point x="449" y="16" type="line"/>
+      <point x="381" y="-53"/>
+      <point x="381" y="-131" type="qcurve" smooth="yes"/>
+      <point x="381" y="-181"/>
+      <point x="430" y="-233"/>
+      <point x="468" y="-233" type="qcurve" smooth="yes"/>
+      <point x="499" y="-233"/>
+      <point x="539" y="-216" type="qcurve"/>
+      <point x="547" y="-233" type="line"/>
+      <point x="496" y="-276"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni1B2F.conj.2" format="2">
+  <advance width="0"/>
+  <anchor x="-45" y="-439" name="Anchor-6"/>
+  <outline>
+    <contour>
+      <point x="-310" y="-810" type="qcurve" smooth="yes"/>
+      <point x="-137" y="-810"/>
+      <point x="-129" y="-649" type="qcurve"/>
+      <point x="-129" y="-600" type="line"/>
+      <point x="-177" y="-629"/>
+      <point x="-277" y="-629" type="qcurve" smooth="yes"/>
+      <point x="-368" y="-629"/>
+      <point x="-450" y="-680"/>
+      <point x="-450" y="-723" type="qcurve" smooth="yes"/>
+      <point x="-450" y="-810"/>
+    </contour>
+    <contour>
+      <point x="-313" y="-887" type="qcurve" smooth="yes"/>
+      <point x="-416" y="-887"/>
+      <point x="-531" y="-798"/>
+      <point x="-531" y="-737" type="qcurve" smooth="yes"/>
+      <point x="-531" y="-568"/>
+      <point x="-270" y="-568" type="qcurve" smooth="yes"/>
+      <point x="-178" y="-568"/>
+      <point x="-129" y="-537" type="qcurve"/>
+      <point x="-50" y="-537" type="line"/>
+      <point x="-50" y="-647" type="line"/>
+      <point x="-58" y="-887"/>
+    </contour>
+  </outline>
+</glyph>

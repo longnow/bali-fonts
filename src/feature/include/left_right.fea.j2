@@ -1,0 +1,24 @@
+# left/right adjustment subtables
+
+{% include 'left_right_' ~ font ~ '.fea.j2' %}
+
+# wide conjunct advance adjustment (left)
+lookup distDistanceinBalineselookup3 {
+  lookupflag UseMarkFilteringSet @mark_below;
+
+  # handled in distDistanceinBalineselookup5
+  ignore pos @any_below @cons_gempelan' @conj_below_simple @conj_below2;
+
+  {% include 'left_rules_' ~ font ~ '.fea.j2' %}
+
+
+} distDistanceinBalineselookup3;
+
+# wide conjunct advance adjustment (right)
+lookup distDistanceinBalineselookup4 {
+  lookupflag UseMarkFilteringSet @mark_below;
+
+  {% include 'right_rules_' ~ font ~ '.fea.j2' %}
+
+
+} distDistanceinBalineselookup4;

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="uni1B0C.conj" format="2">
+  <advance width="518"/>
+  <anchor x="292" y="525" name="Anchor-2"/>
+  <outline>
+    <component base="uni1B27.conj"/>
+    <component base="cereg3"/>
+  </outline>
+</glyph>

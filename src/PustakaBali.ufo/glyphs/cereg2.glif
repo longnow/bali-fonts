@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="cereg2" format="2">
+  <advance width="0"/>
+  <outline>
+    <contour>
+      <point x="185" y="478" type="qcurve"/>
+      <point x="160" y="507" type="line"/>
+      <point x="253" y="607"/>
+      <point x="302" y="671"/>
+      <point x="302" y="693" type="qcurve" smooth="yes"/>
+      <point x="302" y="721"/>
+      <point x="202" y="771"/>
+      <point x="155" y="823"/>
+      <point x="155" y="856" type="qcurve" smooth="yes"/>
+      <point x="155" y="902"/>
+      <point x="225" y="954"/>
+      <point x="280" y="954" type="qcurve" smooth="yes"/>
+      <point x="306" y="954"/>
+      <point x="331" y="947" type="qcurve"/>
+      <point x="331" y="914" type="line"/>
+      <point x="313" y="915" type="line"/>
+      <point x="228" y="915"/>
+      <point x="228" y="871" type="qcurve" smooth="yes"/>
+      <point x="228" y="848"/>
+      <point x="270" y="819"/>
+      <point x="360" y="770"/>
+      <point x="375" y="734" type="qcurve" smooth="yes"/>
+      <point x="381" y="722"/>
+      <point x="381" y="708" type="qcurve" smooth="yes"/>
+      <point x="381" y="681"/>
+      <point x="362" y="649" type="qcurve" smooth="yes"/>
+      <point x="332" y="600"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,6 +1,6 @@
 # bali-fonts
 
-This repository contains the latest release of three [Balinese Unicode](https://en.wikipedia.org/wiki/Balinese_(Unicode_block)) fonts: Vimala, Pustaka Bali, and Kadiri. These fonts are copyright [Aditya Bayu Perdana](https://www.behance.net/byabay), all rights reserved. The fonts are available under the [SIL OFL 1.1 license](LICENSE). Aditya Bayu Perdana designed the glyphs. [PanLex](https://panlex.org) assisted in developing the OpenType rules.
+This repository contains the latest release of three [Balinese Unicode](https://en.wikipedia.org/wiki/Balinese_(Unicode_block)) fonts: Vimala, Pustaka Bali, and Kadiri. These fonts are copyright [Aditya Bayu Perdana](https://www.behance.net/byabay), all rights reserved. The fonts are available under the [SIL OFL 1.1 license](LICENSE). Aditya Bayu Perdana designed the glyphs. [PanLex](https://panlex.org) assisted in developing the OpenType rules. Compiled fonts are in the [release](release) directory.
 
 Vimala has a style similar to Bali Simbar, a non-Unicode font designed by I Made Suatjana that is popular in Bali. Pustaka Bali has a monoline (“sans-serif”) style that is optimized for screens. Kadiri is based on the handwriting of a lontar in the collection of Sugi Lanus, written by Pranda Madhe Kadiri. Below is a sample showing the Balinese greeting ᬒᬁᬲ᭄ᬯᬲ᭄ᬢ᭄ᬬᬲ᭄ᬢᬸ (_om swastyastu_), from top to bottom: Vimala, Pustaka Bali, Kadiri.
 
@@ -61,3 +61,17 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 
 * 1.00 (March 14, 2020)
   * initial public release
+
+## Compiling the fonts from source
+
+To compile the fonts, you need [FontForge](https://fontforge.org/) Python bindings and [https://github.com/kblomqvist/yasha](yasha). To compile, run `script/compile`, which does the following:
+
+1. Runs `script/dist_calc.py`, which reads glyph metrics from the `.sfd` files in `src/` and uses them to generate various portions of the feature file in `src/feature/include/` that perform spacing adjustments.
+2. Runs `yasha` to generate each font's feature file (`features.fea`) in `src/<font>.ufo`.
+3. Runs `script/compile.py` to compile each `.ufo` into `release/<font>.ttf`.
+
+If you are on macOS, you can also run `script/preview`, which first runs `script/compile`, installs the compiled fonts for the current user, and relaunches TextEdit. This lets you test that the compiled fonts are working correctly.
+
+# Modifying glyphs
+
+If you modify, add, or remove glyphs, you should do so in the `.ufo` file located in `src/`. Once you have done so, be sure to save a copy of the new version as `src/<font>.sfd`. You can do this in FontForge by opening the `.ufo` file and choosing _Save As…_. The `.sfd` file must be kept up to date for glyph metrics because it is used in `script/dist_calc.py`. (It would be better to read metrics directly from `.ufo`, but we have encountered problems doing this consistently.)

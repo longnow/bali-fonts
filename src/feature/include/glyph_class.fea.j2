@@ -1,0 +1,49 @@
+# base consonants
+@cons = [\uni1B13 \uni1B14 \uni1B15 \uni1B16 \uni1B17 \uni1B18 \uni1B19 \uni1B1A {% if font != 'vimala' %}\uni1B1A.2{% endif %} \uni1B1B \uni1B1B.2 \uni1B1C \uni1B1D \uni1B1E \uni1B1F \uni1B20 \uni1B21 \uni1B22 \uni1B23 \uni1B24 \uni1B25 \uni1B26 \uni1B27 \uni1B28 \uni1B29 \uni1B2A \uni1B2B \uni1B2C \uni1B2D \uni1B2E \uni1B2F \uni1B30 \uni1B31 \uni1B32 \uni1B33 \uni1B45 \uni1B46 \uni1B47 \uni1B48 \uni1B49 \uni1B4A \uni1B4B ];
+
+# base consonants plus gempelan
+@cons_gempelan = [@cons \uni1B27.conj \uni1B28.conj \uni1B31.conj \uni1B32.conj \uni1B48.conj \uni1B4A.conj ];
+
+# consonant-ra ligatures
+@cons_ra = [\uni1B13.ra \uni1B14.ra \uni1B15.ra \uni1B16.ra \uni1B17.ra \uni1B18.ra \uni1B19.ra \uni1B1A.ra \uni1B1B.ra \uni1B1C.ra \uni1B1D.ra \uni1B1E.ra \uni1B1F.ra \uni1B20.ra \uni1B21.ra \uni1B22.ra \uni1B23.ra \uni1B24.ra \uni1B25.ra \uni1B26.ra \uni1B27.ra \uni1B28.ra \uni1B29.ra \uni1B2A.ra \uni1B2B.ra \uni1B2C.ra \uni1B2D.ra \uni1B2E.ra \uni1B2F.ra \uni1B30.ra \uni1B31.ra \uni1B32.ra \uni1B33.ra \uni1B45.ra \uni1B46.ra \uni1B47.ra \uni1B48.ra \uni1B49.ra \uni1B4A.ra \uni1B4B.ra ];
+
+# conjuncts below (gantungan), narrow forms
+@conj_below_narrow = [\uni1B15.conj \uni1B1A.conj \uni1B1F.conj \uni1B20.conj \uni1B22.conj \uni1B24.conj \uni1B2B.conj \uni1B30.conj \uni1B33.conj \uni1B47.conj \uni1B49.conj ];
+
+# conjuncts below (gantungan), first consonant
+@conj_below_simple = [@conj_below_narrow \uni1B13.conj \uni1B14.conj \uni1B16.conj.1 \uni1B16.conj.2 \uni1B17.conj \uni1B18.conj \uni1B19.conj.1 \uni1B19.conj.2 \uni1B1B.conj \uni1B1C.conj \uni1B1D.conj \uni1B1E.conj \uni1B21.conj.1 \uni1B21.conj.2 \uni1B23.conj \uni1B25.conj \uni1B26.conj \uni1B29.conj.1 \uni1B29.conj.2 \uni1B2A.conj \uni1B2C.conj.1 \uni1B2D.conj.1 \uni1B2E.conj.1 \uni1B2E.conj.2 \uni1B2F.conj.1 \uni1B45.conj \uni1B46.conj \uni1B4B.conj ];
+
+# conjuncts below (gantungan), all marks
+@conj_below = [@conj_below_simple \uni1B0D.conj \uni1B0E.conj \uni1B23.conj.ra \uni1B26.conj.u \uni1B26.conj.uu \uni1B2C.conj.2 \uni1B2D.conj.wa \uni1B2D.conj.3.wa \uni1B2E.conj.3 \uni1B2F.conj.2 \uni1B2F.conj.wa \uni1B32.conj \uni1B49.conj.ra {% if font != 'vimala' %}\uni1B1A.conj.u \uni1B24.conj.u{% endif %} ];
+
+# conjuncts below (gantungan), after first consonant (marks and bases)
+@conj_below2 = [\uni1B2D.conj.3 \uni1B2D.conj.3.wa \uni1B2D.conj.3.ya \uni1B2D.conj.3.ya.u \uni1B2D.conj.3.ya.uu {% if font == 'vimala' %}\uni1B2D.conj.4{% endif %} \uni1B2E.conj.3 \uni1B3A.3 {% if font == 'vimala' %}\uni1B3A.4{% endif %} ];
+
+# conjuncts below (= gantungan), wide forms to the right
+@conj_below_wide_right = [\uni1B1C.conj {% if font == 'vimala_eka' %}\uni1B1D.conj{% endif %} \uni1B46.conj \uni1B4B.conj ];
+
+# vowel marks below
+@vowel_below = [\uni1B38 \uni1B38.2 \uni1B38.3 \uni1B38.4 \uni1B39 \uni1B39.2 \uni1B39.3 \uni1B39.4 \uni1B3A \uni1B3A.2 \uni1B3A.5 \uni1B3C.blw ];
+
+# mark-like base glyphs below
+@spacing_mark_below = [\uni1B1B.conj \uni1B23.conj.ra \uni1B2F.conj.ra \uni1B49.conj.ra \uni1B23.conj.ya \uni1B26.conj.ya \uni1B2C.conj.1 \uni1B2C.conj.2 \uni1B2D.conj.3 {% if font == 'vimala' %}\uni1B2D.conj.4{% endif %} \uni1B2D.conj.ya \uni1B2D.conj.3.ya \uni1B2F.conj.ya \uni1B3A.3 {% if font == 'vimala' %}\uni1B3A.4{% endif %} \uni1B49.conj.ya ];
+
+# mark-like base glyphs
+@spacing_mark = [@spacing_mark_below \uni1B35 ];
+
+# base glyphs that extend below baseline, and can start an aksara
+@base_below_simple = [\uni1B09 \uni1B0A \uni1B0D \uni1B0E \uni1B10 \uni1B11 \uni1B12 \uni1B1B \uni1B3E \uni1B3F \uni1B44 \uni1B52 \uni1B53 \uni1B5B \uni1B5E \uni1B5F @cons_ra ];
+
+@base_below_simple_or_conj_right = [@base_below_simple \uni1B2C.conj.2 \uni1B2D.conj.3 {% if font == 'vimala' %}\uni1B2D.conj.4{% endif %} \uni1B2D.conj.3.ya ];
+
+# base glyphs that extend below baseline, all
+@base_below = [@base_below_simple \uni1B04 \uni1B1B.conj \uni1B23.conj.ra \uni1B23.conj.ya \uni1B23.conj.ya.u \uni1B23.conj.ya.uu \uni1B26.conj.ya \uni1B26.conj.ya.u \uni1B26.conj.ya.uu \uni1B2C.conj.1 \uni1B2C.conj.2 \uni1B2C.conj.u.1 \uni1B2C.conj.u.2 \uni1B2C.conj.uu.1 \uni1B2C.conj.uu.2 \uni1B2D.conj.3 {% if font == 'vimala' %}\uni1B2D.conj.4{% endif %} \uni1B2D.conj.ya \uni1B2D.conj.3.ya \uni1B2D.conj.ya.u \uni1B2D.conj.3.ya.u \uni1B2D.conj.ya.uu \uni1B2D.conj.3.ya.uu \uni1B2F.conj.ra \uni1B2F.conj.ya \uni1B2F.conj.ya.u \uni1B2F.conj.ya.uu \uni1B3A.3 {% if font == 'vimala' %}\uni1B3A.4{% endif %} \uni1B49.conj.ra \uni1B49.conj.ya \uni1B49.conj.ya.u \uni1B49.conj.ya.uu ];
+
+@mark_below = [@conj_below @vowel_below ];
+@mark_below_with_spacing = [@mark_below @spacing_mark_below ];
+@any_below = [@mark_below @base_below ];
+
+@vowel_coda_above = [\uni1B00 \uni1B01 \uni1B02 \uni1B03 \uni1B36 \uni1B37 \uni1B42 ];
+@mark_above = [@vowel_coda_above \uni1B34 ];
+
+@surang = [\uni1B03 \uni1B02_uni1B03 ];

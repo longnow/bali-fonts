@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -e
+fonts="Vimala PustakaBali Kadiri"
+
+script/compile
+
+if [[ $OSTYPE == "darwin"** ]]; then
+    for f in $fonts; do
+        rm -f ~/Library/Fonts/${f}*
+        cp "release/${f}.ttf" ~/Library/Fonts
+    done
+
+    osascript -e 'quit app "TextEdit"'
+    sleep 0.1
+    open /System/Applications/TextEdit.app
+else
+    echo unix implementation goes here
+fi

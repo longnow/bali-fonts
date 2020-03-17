@@ -1,0 +1,23 @@
+feature dist {
+  lookup distDistanceinBalineselookup2;
+  lookup distDistanceinBalineselookup3;
+  lookup distDistanceinBalineselookup4;
+  lookup distDistanceinBalineselookup5;
+  lookup distDistanceinBalineselookup8;
+} dist;
+
+feature mark {
+  lookup markMarkPositioninginBalineselookup1;
+  lookup markMarkPositioninginBalineselookup2;
+  lookup markMarkPositioninginBalineselookup3;
+  lookup markMarkPositioninginBalineselookup4;
+} mark;
+
+feature mkmk {
+  lookup mkmkMarktoMarkinBalineselookup1;
+  lookup mkmkMarktoMarkinBalineselookup2;
+} mkmk;
+
+table GDEF {
+  GlyphClassDef @GDEF_Base, , @GDEF_Mark, ;
+} GDEF;

@@ -445,11 +445,12 @@ def print_suku_spacing(f, font, bases, code):
 def print_font_calcs(fontpath, name, code):
     if name == "vimala":
         filter_cons = set(["uni1B1A.2"])
-        font_cons = [x for x in cons if x not in filter_cons]
-        font_cons_gempelan = [x for x in cons_gempelan if x not in filter_cons]
     else:
-        font_cons = cons
-        font_cons_gempelan = cons_gempelan
+        filter_cons = set()
+
+    font_cons = [x for x in cons if x not in filter_cons]
+    font_cons_gempelan = [x for x in cons_gempelan if x not in filter_cons]
+
 
     font = fontforge.open(fontpath)
 

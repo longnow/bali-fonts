@@ -359,7 +359,9 @@ def print_anchor_right_rules(f, rules):
             marks = " ".join(rule["marks"])
             bases = " ".join(rule["bases"])
             print("  pos [{0} ]' lookup {1} [{2} ] @GDEF_Base_Simple @mark_below_with_spacing;".format(bases, rule["lookup"], marks), file=f)
+            print("  pos [{0} ]' lookup {1} [{2} ] @mark_below @GDEF_Base_Simple @mark_below_with_spacing;".format(bases, rule["lookup"], marks), file=f)
             print("  pos [{0} ]' lookup {1} [{2} ] @base_below_simple_or_conj_right;".format(bases, rule["lookup"], marks), file=f)
+            print("  pos [{0} ]' lookup {1} [{2} ] @mark_below @base_below_simple_or_conj_right;".format(bases, rule["lookup"], marks), file=f)
             print(file=f)
 
 def print_mkmk_rules(f, rules, anchor_name):

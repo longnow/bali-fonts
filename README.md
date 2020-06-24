@@ -12,6 +12,8 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 
 ### Vimala
 
+* 2.05 (June 24, 2020)
+  * fixed alignment of bisah after centered conjuncts below
 * 2.04 (March 6, 2020)
   * changed license to SIL OFL 1.1
   * changed shape of second-stack ra ligatures (wraps around left)
@@ -38,6 +40,8 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 
 ### Pustaka Bali
 
+* 2.05 (June 24, 2020)
+  * fixed alignment of bisah after centered conjuncts below
 * 2.04 (March 14, 2020)
   * fix several spacing issues in previous release
 * 2.03 (March 6, 2020)
@@ -59,6 +63,8 @@ PanLex has designed a [Keyman keyboard](https://keyman.com/keyboards/aksarabali_
 
 ### Kadiri
 
+* 1.01 (June 24, 2020)
+  * fixed alignment of bisah after centered conjuncts below
 * 1.00 (March 14, 2020)
   * initial public release
 
